@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="#000435"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUOTES"
+        android:textColor="#C80F83"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:text="........."
+        tools:text="Quote of the day"
+        android:textSize="35dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/quote"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#808080"
+        android:text="Author"
+        android:layout_below="@id/quote"
+        android:id="@+id/auth"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <!-- Other XML code -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="SAVE"
+        android:backgroundTint="@color/white"
+        android:textColor="#000435"
+        android:layout_below="@id/share"
+        android:layout_marginTop="12dp"
+        android:id="@+id/save"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="VIEW FAVORITES"
+        android:backgroundTint="@color/white"
+        android:textColor="#000435"
+        android:layout_below="@id/save"
+        android:layout_marginTop="12dp"
+        android:id="@+id/viewFavorites"/>
+
+    <!-- Other XML code -->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auth"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="NEXT"
+        android:backgroundTint="@color/white"
+        android:textColor="#000435"
+        android:layout_marginTop="12dp"
+        android:id="@+id/next"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/next"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="SHARE"
+        android:backgroundTint="@color/white"
+        android:textColor="#000435"
+        android:layout_marginTop="12dp"
+        android:id="@+id/share"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>
